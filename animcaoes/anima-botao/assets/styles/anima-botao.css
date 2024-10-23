@@ -1,36 +1,100 @@
-.pepsi-button {
-    background-color: #003DA5; /* Azul Pepsi */
-    color: white; /* Texto branco */
-    border: none;
-    padding: 15px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.4s, color 0.4s;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1; /* Garante que o botão esteja acima do gradiente */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.pepsi-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, #ff4949, #ffffff, #3059a0);
-    z-index: 0;
-    transform: scale(0);
-    transition: transform 0.4s, opacity 0.4s;
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 
-.pepsi-button:hover::before {
-    transform: scale(1);
-    opacity: 0.9; /* Aumenta a opacidade para destacar o texto */
+.container .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-decoration: none;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
 }
 
-.pepsi-button:hover {
-    color: black; /* Muda a cor do texto para preto durante o hover */
-    text-shadow: 2px 2px 2px rgb(0, 0, 0); /* Adiciona uma sombra branca ao texto para aumentar a nitidez */
+.container .button:hover {
+  width: 200px;
+}
+.container {
+  display: inline-flex; /* Mantenha o layout inline-flex */
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container .button:hover {
+  width: 200px; /* Mantém a expansão apenas do botão hover */
+}
+
+.container .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  color: #000;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+/* O resto do seu CSS permanece inalterado */
+
+.container .button:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+
+.container .button:nth-child(2):hover .icon {
+  background: #1da1f2;
+}
+
+.container .button:nth-child(3):hover .icon {
+  background: #e1306c;
+}
+
+.container .button .icon img {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.container .button:hover .icon img {
+  color: #fff;
+}
+
+.container .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.container .button:nth-child(1) span {
+  color: #4267b2;
+}
+
+.container .button:nth-child(2) span {
+  color: #1da1f2;
+}
+
+.container .button:nth-child(3) span {
+  color: #e1306c;
 }

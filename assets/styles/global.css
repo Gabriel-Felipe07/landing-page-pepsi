@@ -73,7 +73,7 @@
 }
 
 .container-imagens-pepsi img {
-  transition: transform 0.5s ease;
+    transition: 0.5s;
 }
 
 .copo-pepsi {

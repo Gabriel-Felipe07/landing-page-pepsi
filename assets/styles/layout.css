@@ -17,6 +17,10 @@
   right: 0;
 }
 
+.container-principal-header > figure > img{
+  transition: 0.5s;
+}
+
 main {
   width: 100%;
   max-width: 1120px;

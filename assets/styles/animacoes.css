@@ -3,6 +3,10 @@
     opacity: 1;
     transform: translateY(0);
   }
+}/*---------animação usada no arquivo global.css (aparecer suavemente o título principal junto com sua descrição)----------*/
+
+.container-principal-header > figure > img:hover{
+  transform: scale(1.1);
 }
 
 .itens-container-nutricional li:hover {
