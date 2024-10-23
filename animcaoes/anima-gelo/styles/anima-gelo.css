@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+}
+
+.container {
+    position: relative;
+}
+
+.glass {
+    width: 100px;
+    height: 150px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.pepsi {
+    width: 100%;
+    height: 0;
+    background-color: #c75b20; /* Cor da Pepsi */
+    position: absolute;
+    bottom: 0;
+    animation: fill 4s forwards;
+    border-radius: 0 0 10px 10px;
+}
+
+.ice-cube {
+    width: 25px;
+    height: 25px;
+    background-color: #a8d8ea;
+    position: absolute;
+    top: -30px;
+    animation: fall 2s infinite;
+    opacity: 0.8;
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.ice-cube:nth-child(3) {
+    left: 10px;
+    animation-delay: 0s;
+}
+
+.ice-cube:nth-child(4) {
+    left: 35px;
+    animation-delay: 0.5s;
+}
+
+.ice-cube:nth-child(5) {
+    left: 60px;
+    animation-delay: 1s;
+}
+
+.ice-cube:nth-child(6) {
+    left: 20px;
+    animation-delay: 1.5s;
+}
+
+.ice-cube:nth-child(7) {
+    left: 45px;
+    animation-delay: 2s;
+}
+
+@keyframes fill {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 130px; /* Altura total do copo */
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(130px);
+    }
+    100% {
+        transform: translateY(130px);
+        opacity: 0;
+    }
+}

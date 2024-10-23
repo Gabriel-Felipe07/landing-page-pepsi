@@ -91,10 +91,21 @@
   left: 180px;
   top: 70px;
   transform: rotate(-15deg);
+  transition: 0.5s;
+}
+
+.liquido-2{
+  position: absolute;
+  z-index: 1;
+  left: 225px;
+  top: 70px;
+  transform: rotate(-15deg);
+  transform: scaleX(-1);
 }
 
 .liquido-caindo,
-.copo-pepsi {
+.copo-pepsi,
+.liquido-2 {
   transition: opacity 0.5s ease;
   opacity: 0;
 }
@@ -113,6 +124,15 @@
   right: 0;
   z-index: 2;
   transition: transform 0.35s ease, height 0.35s ease, left 0.35s ease,
+    top 0.35s ease;
+}
+
+.lata-2{
+  position: absolute;
+    top: 30px;
+    left: 199px;
+    z-index: 2;
+    transition: transform 0.35s ease, height 0.35s ease, left 0.35s ease,
     top 0.35s ease;
 }
 

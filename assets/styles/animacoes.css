@@ -29,16 +29,25 @@
   opacity: 1;
 }
 
-.copo-pepsi:hover ~ .lata-grande-gelada {
+.copo-pepsi:hover ~ .lata-grande-gelada{
   left: 60px;
   transform: rotate(105deg);
   height: 275px;
   top: -80px;
 }
 
-.copo-pepsi:hover ~ .liquido-caindo {
+.copo-pepsi:hover ~ .lata-2{
+  left: 420px; /* Lado direito */
+    transform: rotate(250deg);
+    height: 250px;
+    top: -100px;
+}
+
+.copo-pepsi:hover ~ .liquido-caindo,
+.copo-pepsi:hover ~ .liquido-2 {
   opacity: 1;
 }
 .copo-pepsi:hover ~ .lata-pequena-natural {
   opacity: 0;
 }
+
