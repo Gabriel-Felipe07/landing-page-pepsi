@@ -1,0 +1,31 @@
+/* Formatação para cada item do hotsite */
+.container-principal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Tamanho total do container */
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 15px 16px;
+
+  /* O menu será fixado na tela, a rolagem irá acontecer apenas 
+  no conteúdo (body) */
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 1120px;
+  margin: 72px auto 0;
+  padding: 0 16px;
+  display: flex;
+}
+
+.sessao-principal {
+  max-width: 645px;
+  padding-left: 40px;
+}

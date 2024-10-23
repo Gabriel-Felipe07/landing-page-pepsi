@@ -1,0 +1,27 @@
+/* Reset para todos os elementos da página */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blue-dark);
+  color: var(--white);
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  /* Herdar a cor do pai */
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}

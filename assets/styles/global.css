@@ -1,0 +1,172 @@
+.titulo-principal,
+.descricao-principal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.8s forwards;
+}
+
+.titulo-principal {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.descricao-principal {
+  margin-top: 18px;
+  font-weight: 300;
+}
+
+.container-nutricional {
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container-nutricional-titulo {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.itens-container-nutricional {
+  display: flex;
+  gap: 15px;
+}
+
+.itens-container-nutricional li {
+  width: 117px;
+  transition: 0.5s;
+}
+
+.itens-container-nutricional li > div {
+  padding: 20px 0;
+  background-color: var(--blue-medium);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.itens-container-nutricional li > div strong {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.itens-container-nutricional li > footer {
+  padding: 10px 0;
+  background-color: var(--blue-light);
+
+  display: flex;
+  justify-content: center;
+}
+
+.detalhes-nutricionais {
+  font-weight: 300;
+  font-size: 14px;
+  max-width: 375px;
+}
+
+.container-imagens-pepsi {
+  flex: 1;
+  /* Relativo: alguém será absoluto em relação a ele. (PAI)  */
+  position: relative;
+}
+
+.container-imagens-pepsi img {
+  transition: transform 0.5s ease;
+}
+
+.copo-pepsi {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+  height: 370px;
+  z-index: 3;
+  transform: rotate(15deg);
+}
+
+.liquido-caindo {
+  position: absolute;
+  z-index: 1;
+  left: 180px;
+  top: 70px;
+  transform: rotate(-15deg);
+}
+
+.liquido-caindo,
+.copo-pepsi {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.lata-pequena-natural {
+  /* Absoluto (filho): será absoluto em relação a alguém (PAI) */
+  position: absolute;
+  bottom: 0;
+  right: 202px;
+  transition: 0.3s;
+}
+
+.lata-grande-gelada {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  transition: transform 0.35s ease, height 0.35s ease, left 0.35s ease,
+    top 0.35s ease;
+}
+
+.container-informacoes-inferior-direito {
+  background-color: var(--blue-light);
+  padding-bottom: 18px;
+  position: fixed;
+  right: 0;
+  bottom: 26.7px;
+  max-width: 110px;
+  transition: 0.5s;
+}
+
+.container-informacoes-inferior-direito > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 19px 12px;
+  background-color: var(--blue-medium);
+}
+
+.container-informacoes-inferior-direito > div strong {
+  font-weight: 500;
+  font-size: 23px;
+}
+
+.container-informacoes-inferior-direito > div small {
+  margin: 2px 0 10px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.container-informacoes-inferior-direito > div span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.container-midias-sociais {
+  position: fixed;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container-midias-sociais ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.container-midias-sociais ul li {
+  padding: 10px;
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,71 @@
+.container-navegacao-header {
+  display: flex;
+  /* Espaçamento entre os elementos */
+  gap: 25px;
+}
+
+nav {
+  position: relative;
+  border-radius: 8px;
+}
+
+.navegacao-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navegacao-header li {
+  font-family: "Inter", sans-serif;
+
+  /* Letras maiúsculas */
+  text-transform: uppercase;
+}
+
+.navegacao-header li.active {
+  /* Peso da fonte, quanto maior o peso mais destaque. */
+  font-weight: 600;
+}
+
+.navegacao-header li a {
+  /* Espaço para o toque (mobile), aumentar a área de click (desktop) */
+  padding: 10px;
+}
+
+nav > ul > li > a {
+  position: relative;
+}
+
+nav > ul > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(45deg, #4f1919, #ff3333);
+  border-radius: 8px;
+  z-index: -1;
+  transition: left 0.5s ease, width 0.5s ease;
+}
+
+/* Movimenta o span quando o link é hoverado */
+nav > ul > li:nth-child(1):hover ~ span {
+  left: 0;
+  width: 100px;
+}
+nav > ul > li:nth-child(2):hover ~ span {
+  left: 130px;
+  width: 100px;
+}
+nav > ul > li:nth-child(3):hover ~ span {
+  left: 255px;
+  width: 120px;
+}
+nav > ul > li:nth-child(4):hover ~ span {
+  left: 390px;
+  width: 115px;
+}
+nav > ul > li:nth-child(5):hover ~ span {
+  left: 520px;
+  width: 95px;
+}

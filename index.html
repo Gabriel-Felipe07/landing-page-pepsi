@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <!-- Conectando no servidor do google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Importando as fontes necessárias para o projeto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importando arquivo de cores  -->
+    <link rel="stylesheet" href="./assets/styles/cores.css" />
+
+    <!-- Importando arquivo global -->
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+
+    <!-- importando arquivo de estilização das navegações da página -->
+    <link rel="stylesheet" href="./assets/styles/navegacao.css" />
+
+    <!-- Importando arquivo de estilização dos botões da página -->
+    <link rel="stylesheet" href="./assets/styles/botoes.css">
+
+    <!-- importando arquivo de reset da página -->
+    <link rel="stylesheet" href="./assets/styles/resets.css">
+
+    <!-- Importando arquivo de layout da página -->
+    <link rel="stylesheet" href="./assets/styles/layout.css">
+
+    <!-- Importando arquivo de efeitos da página -->
+    <link rel="stylesheet" href="./assets/styles/efeitos.css">
+
+    <!-- importando arquivo de animações da página -->
+    <link rel="stylesheet" href="./assets/styles/animacoes.css">
+
+
+    <!-- importando icone da pepsi -->
+    <link rel="shortcut icon" href="./assets/img/icone/icone-pepsi.ico" type="image/x-icon">
+
+    <title>Pepsi | Landing page</title>
+
+  </head>
+
+  <body>
+
+    <!-- Cabeçalho -->
+    <header class="container-principal-header">
+      <!-- Logo da Pepsi -->
+      <figure>
+
+        <img src="./assets/img/logos/pepsi-logo.svg" alt="Pepsi logotipo" />
+
+      </figure>
+
+      <!-- Menu de navegação do header -->
+      <nav class="container-navegacao-header">
+
+        <ul class="navegacao-header">
+
+          <li class="active">
+
+            <a href="#">Produtos</a>
+
+          </li>
+
+          <li>
+
+            <a href="#">Novidades</a>
+
+          </li>
+
+          <li>
+
+            <a href="#">Newsletter</a>
+
+          </li>
+
+          <li>
+
+            <a href="#">Sobre nós</a>
+
+          </li>
+
+          <li>
+
+            <a href="#">Contato</a>
+
+          </li>
+
+          <span></span>
+
+        </ul>
+
+        <button class="botao-comprar">Comprar produto</button>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+      <!-- Valores nutricionais do produto -->
+
+      <section class="sessao-principal">
+
+        <!-- Título principal da página -->
+        <h1 class="titulo-principal">Pepsi Classic</h1>
+
+        <p class="descricao-principal">
+
+          Água Gaseificada, Alto Teor de Frutose, Xarope de Milho, Corante de
+          Caramelo, Açúcar, Ácido Fosfórico, Cafeína, Ácido Cítrico, Sabor
+          Natural
+
+        </p>
+
+        <div class="container-nutricional">
+
+          <h3 class="container-nutricional-titulo">Informação nutricional</h3>
+
+          <ul class="itens-container-nutricional">
+
+            <li>
+
+              <div>
+
+                <span>Xarope</span>
+                <strong>1,5 L</strong>
+
+              </div>
+
+              <!-- indicando o rodapé de cada card de informação nutricional -->
+              <footer>
+
+                <span>1,5 L</span>
+
+              </footer>
+
+            </li>
+
+            <li>
+
+              <div>
+
+                <span>Cafeína</span>
+                <strong>10 g</strong>
+
+              </div>
+
+              <footer>
+
+                <span>1,5 L</span>
+
+              </footer>
+
+            </li>
+
+            <li>
+
+              <div>
+
+                <span>Ácido Cítrico</span>
+
+                <strong>0,08 L</strong>
+
+              </div>
+
+              <footer>
+
+                <span>1,5 L</span>
+
+              </footer>
+
+            </li>
+
+            <li>
+
+              <div>
+
+                <span>Sabor Natural</span>
+                <strong>200 g</strong>
+
+              </div>
+
+              <footer>
+
+                <span>1,5 L</span>
+
+              </footer>
+
+            </li>
+
+            <li>
+
+              <div>
+
+                <span>Frutose</span>
+                <strong>200 g</strong>
+
+              </div>
+
+              <footer>
+
+                <span>1,5 L</span>
+
+              </footer>
+
+            </li>
+
+          </ul><!--itens-container-nutricional-->
+
+          <p class="detalhes-nutricionais">
+
+            Ricas em energia, nossas bebidas vão revigorar seu corpo e te deixar
+            pronto para as atividades do dia
+
+          </p>
+
+        </div><!--container-nutricional-->
+
+        <!-- botão comprar do header -->
+        <button class="botao-comprar botao-comprar-nutricional">
+
+          Comprar agora
+
+        </button><!--botao-comprar botao-comprar-nutricional-->
+
+      </section><!--sessao-principal-->
+
+      <!-- latas de pepsi, sombras, copos, liquido -->
+      <section class="container-imagens-pepsi">
+
+        <figure>
+
+          <img
+            src="./assets/img/logos/copo-cheio.png" alt="Copo com Pepsi" class="copo-pepsi"
+          />
+
+          <img
+            src="./assets/img/produtos/large-can.png" alt="Pepsi lata 350ml gelada" class="lata-grande-gelada"
+          />
+
+          <img
+            src="./assets/img/produtos/little-can.png" alt="Pepsi lata 350ml" class="lata-pequena-natural"
+          />
+
+          <img
+            src="./assets/img/efeitos/liquido-caindo.png" alt="refrigerante Pepsi saindo da lata" class="liquido-caindo"
+          />
+
+          <img
+            src="./assets/img/efeitos/shadow.png" alt="Sombra das latas" class="sombra-latas"
+          />
+
+        </figure><!--"lista" de imagens-->
+
+      </section><!--container-imagens-pepsi-->
+
+      <!-- "Luz" do lado superior direito -->
+      <span class="background-esfumacado"></span>
+
+      <!-- Barra de navegação lateral com mídias sociais -->
+      <aside>
+
+        <nav class="container-midias-sociais">
+
+          <ul>
+
+            <li>
+
+              <a href="#">
+
+                <img src="./assets/img/logos/x-logo.svg" alt="X logotipo" />
+
+              </a>
+
+            </li>
+
+            <li>
+
+              <a href="#">
+
+                <img src="./assets/img/logos/linkedin-logo.svg" alt="Linkedin logotipo" />
+
+              </a>
+
+            </li>
+
+            <li>
+
+              <a href="#">
+
+                <img src="./assets/img/logos/facebook-logo.svg" alt="Facebook logotipo" />
+
+              </a>
+
+            </li>
+
+            <li>
+
+              <a href="#">
+
+                <img src="./assets/img/logos/instagram-logo.svg" alt="Instagram logotipo" />
+
+              </a>
+
+            </li>
+
+          </ul><!--lista não ordenada-->
+
+        </nav><!--container-midias-sociais-->
+
+      </aside><!--aside-->
+
+    </main><!--main-->
+
+    <!-- Rodapé -->
+    <footer>
+
+      <!-- informações sobre a lata em destaque -->
+      <section class="container-informacoes-inferior-direito">
+
+        <div>
+
+          <strong>350 ml</strong>
+          <small>Lata grande</small>
+          <span>A queridinha do momento</span>
+
+        </div>
+
+      </section>
+
+    </footer><!--footer-->
+
+  </body>
+</html>

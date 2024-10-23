@@ -1,0 +1,65 @@
+/* Estilos para o container */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    
+    background-color: #252872;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+
+/* Estilos para a imagem da lata */
+.imagem-rotacionada {
+    width: 150px;
+    height: auto;
+    transition: transform 0.5s ease;
+    z-index: 1;    
+}
+
+/* Imagens do líquido e do copo */
+.imagem-liquido, .imagem-copo {
+
+/* Inicia invisível */
+    opacity: 0; 
+    /* Transição suave para aparecer */
+    transition: opacity 0.5s ease; 
+}
+
+.imagem-liquido{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 36%;   
+}
+
+.imagem-copo{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 44%;
+    right: 29%;
+}
+
+/* Efeito ao passar o mouse sobre a lata */
+.imagem-rotacionada:hover {
+    transform: rotate(45deg); /* Rotaciona 45 graus a lata */
+}
+
+/* Revela o líquido e o copo ao passar o mouse sobre a lata */
+.imagem-rotacionada:hover ~ .imagem-liquido, 
+.imagem-rotacionada:hover ~ .imagem-copo {
+
+/* Torna o líquido e o copo visíveis */
+    opacity: 1; 
+}

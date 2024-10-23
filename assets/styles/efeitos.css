@@ -1,0 +1,18 @@
+.background-esfumacado {
+  background: #ffffff;
+  width: 370px;
+  height: 370px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* Filtro para desfocar(esfumaçar)  */
+  filter: blur(250px);
+  z-index: -1;
+}
+
+.sombra-latas {
+  position: absolute;
+  right: 0;
+  top: 86%;
+  z-index: -1;
+}

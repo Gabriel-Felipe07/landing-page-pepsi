@@ -1,0 +1,40 @@
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.itens-container-nutricional li:hover {
+  transform: scale(1.05);
+}
+
+.container-imagens-pepsi img:hover {
+  transform: translateY(-5px);
+}
+
+.container-informacoes-inferior-direito:hover {
+  transform: scale(1.05);
+}
+
+.container-midias-sociais ul li:hover {
+  transform: scale(1.3);
+}
+
+.copo-pepsi:hover {
+  opacity: 1;
+}
+
+.copo-pepsi:hover ~ .lata-grande-gelada {
+  left: 60px;
+  transform: rotate(105deg);
+  height: 275px;
+  top: -80px;
+}
+
+.copo-pepsi:hover ~ .liquido-caindo {
+  opacity: 1;
+}
+.copo-pepsi:hover ~ .lata-pequena-natural {
+  opacity: 0;
+}
